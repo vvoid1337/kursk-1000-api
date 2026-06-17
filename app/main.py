@@ -7,7 +7,7 @@ from sqlalchemy.orm import Session
 
 from .database import Base, engine, get_db
 from .models import Landmark
-from .schemas import HealthResponse, LandmarkResponse
+from .schemas import LandmarkResponse
 
 
 @asynccontextmanager
@@ -30,11 +30,6 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
-
-
-@app.get("/health", response_model=HealthResponse)
-def health() -> dict[str, str]:
-    return {"status": "ok"}
 
 
 @app.get("/landmarks", response_model=list[LandmarkResponse])
