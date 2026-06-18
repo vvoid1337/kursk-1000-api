@@ -26,7 +26,7 @@ python -m uvicorn app.main:app --host 0.0.0.0 --port 8000
 ### Медиа и CDN
 
 Полный URL медиа собирается из `MEDIA_BASE_URL` (см. `app/config.py`,
-по умолчанию `raw.githubusercontent.com/vvoid1337/ble/master/media`).
+по умолчанию `raw.githubusercontent.com/vvoid1337/kursk-1000-api/master/media`).
 Переезд на собственный CDN — сменить одну переменную окружения, пути в БД и
 контенте не трогаются:
 
@@ -53,7 +53,7 @@ export MEDIA_BASE_URL="https://cdn.example.com/media"    # bash/zsh
     "subtitle": "Православный кафедральный собор · 1816–1826",
     "year": "1816",
     "summary": "Лид-абзац…",
-    "cover_image": "https://raw.githubusercontent.com/vvoid1337/ble/master/media/znamensky-sobor/cover.jpg",
+    "cover_image": "https://raw.githubusercontent.com/vvoid1337/kursk-1000-api/master/media/znamensky-sobor/cover.jpg",
     "sections": [
       { "title": "История", "body": "…" }
     ],

@@ -5,7 +5,7 @@ import os
 # Переезд на собственный CDN = смена одной этой переменной окружения.
 MEDIA_BASE_URL = os.getenv(
     "MEDIA_BASE_URL",
-    "https://raw.githubusercontent.com/vvoid1337/ble/master/media",
+    "https://raw.githubusercontent.com/vvoid1337/kursk-1000-api/master/media",
 ).rstrip("/")
 
 
