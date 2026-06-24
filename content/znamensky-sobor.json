@@ -27,6 +27,6 @@
   ],
   "gallery": [
     { "type": "image", "src": "znamensky-sobor/01.jpg", "caption": "Главный фасад с портиком" },
-    { "type": "image", "src": "znamensky-sobor/02.jpg", "caption": "Купол собора" },
+    { "type": "image", "src": "znamensky-sobor/02.jpg", "caption": "Купол собора" }
   ]
 }
