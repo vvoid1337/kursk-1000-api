@@ -24,8 +24,6 @@ class LandmarkResponse(BaseModel):
     sections: list[Section] = []
     facts: list[str] = []
     gallery: list[MediaItem] = []
-    # hex-секрет метки (TZ Вариант А): клиент кладёт его в Keystore и проверяет динамический
-    # код. Симметричная схема => секрет уезжает на клиент (по HTTPS в проде).
     beacon_secret: str = ""
 
     @classmethod
