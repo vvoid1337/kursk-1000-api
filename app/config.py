@@ -1,7 +1,7 @@
 import os
 
 # в бд хранятся относительные пути для медиа.
-# переезд на собственный CDN = смена одной этой переменной окружения.
+# переезд на собственный CDN - смена одной этой переменной окружения.
 MEDIA_BASE_URL = os.getenv(
     "MEDIA_BASE_URL",
     "https://raw.githubusercontent.com/vvoid1337/kursk-1000-api/master/media",
